@@ -19,7 +19,7 @@ const perguntas = [{
         "Centríolos."
     ],
     notificaoRespostaCerta: `
-                    <strong>Alternativa C correta</strong>
+                    <strong>Alternativa 3 correta</strong>
                 `,
     temRespostaCorreta: true,
     possuiCampoDigitacao: false
@@ -35,7 +35,7 @@ const perguntas = [{
         "Retículo endoplasmático liso."
     ],
     notificaoRespostaCerta: `
-        <strong>Alternativa A correta</strong>                
+        <strong>Alternativa 1 correta</strong>                
         `,
     temRespostaCorreta: true,
     possuiCampoDigitacao: false
@@ -51,7 +51,7 @@ const perguntas = [{
         "Circulação."
     ],
     notificaoRespostaCerta: `
-        <strong>Alternativa B correta</strong>                
+        <strong>Alternativa 2 correta</strong>                
         `,
     temRespostaCorreta: true,
     possuiCampoDigitacao: false
@@ -67,7 +67,7 @@ const perguntas = [{
         "Retículo endoplasmático rugoso. "
     ],
     notificaoRespostaCerta: `
-        <strong>Alternativa C correta</strong>                
+        <strong>Alternativa 3 correta</strong>                
         `,
     temRespostaCorreta: true,
     possuiCampoDigitacao: false
@@ -83,7 +83,7 @@ const perguntas = [{
         "Vacúolo. "
     ],
     notificaoRespostaCerta: `
-        <strong>Alternativa B correta</strong>                
+        <strong>Alternativa 2 correta</strong>                
         `,
     temRespostaCorreta: true,
     possuiCampoDigitacao: false
@@ -99,7 +99,7 @@ const perguntas = [{
         "Núcleo. "
     ],
     notificaoRespostaCerta: `
-        <strong>Alternativa A correta</strong>                
+        <strong>Alternativa 1 correta</strong>                
         `,
     temRespostaCorreta: true,
     possuiCampoDigitacao: false
@@ -115,7 +115,7 @@ const perguntas = [{
         "Complexo de Golgi."
     ],
     notificaoRespostaCerta: `
-        <strong>Alternativa C correta</strong>                
+        <strong>Alternativa 3 correta</strong>                
         `,
     temRespostaCorreta: true,
     possuiCampoDigitacao: false
@@ -131,7 +131,7 @@ const perguntas = [{
         "Vacúolo."
     ],
     notificaoRespostaCerta: `
-        <strong>Alternativa A correta</strong>                
+        <strong>Alternativa 1 correta</strong>                
         `,
     temRespostaCorreta: true,
     possuiCampoDigitacao: false
@@ -147,7 +147,7 @@ const perguntas = [{
         "Síntese de lipídios."
     ],
     notificaoRespostaCerta: `
-        <strong>Alternativa C correta</strong>                
+        <strong>Alternativa 3 correta</strong>                
         `,
     temRespostaCorreta: true,
     possuiCampoDigitacao: false
@@ -163,7 +163,7 @@ const perguntas = [{
         "Peroxissomo."
     ],
     notificaoRespostaCerta: `
-        <strong>Alternativa D correta</strong>                
+        <strong>Alternativa 4 correta</strong>                
         `,
     temRespostaCorreta: true,
     possuiCampoDigitacao: false
@@ -179,7 +179,7 @@ const perguntas = [{
         "Peroxissomo."
     ],
     notificaoRespostaCerta: `
-        <strong>Alternativa D correta</strong>                
+        <strong>Alternativa 4 correta</strong>                
         `,
     temRespostaCorreta: true,
     possuiCampoDigitacao: false
@@ -195,7 +195,7 @@ const perguntas = [{
         "Produzir lipídios."
     ],
     notificaoRespostaCerta: `
-        <strong>Alternativa A correta</strong>                
+        <strong>Alternativa 1 correta</strong>                
         `,
     temRespostaCorreta: true,
     possuiCampoDigitacao: false
@@ -211,7 +211,7 @@ const perguntas = [{
         "Lisossomos."
     ],
     notificaoRespostaCerta: `
-        <strong>Alternativa C correta</strong>                
+        <strong>Alternativa 3 correta</strong>                
         `,
     temRespostaCorreta: true,
     possuiCampoDigitacao: false
@@ -228,7 +228,7 @@ const perguntas = [{
         "Complexo de Golgi e Centríolo."
     ],
     notificaoRespostaCerta: `
-        <strong>Alternativa B correta</strong>                
+        <strong>Alternativa 2 correta</strong>                
         `,
     temRespostaCorreta: true,
     possuiCampoDigitacao: false
