@@ -1,0 +1,127 @@
+@-webkit-keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(3%);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+@keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(3%);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@-webkit-keyframes scale_bounce_expo {
+    0% {
+        transform: scale(0);
+    }
+    20% {
+        transform: scale(1.2);
+    }
+    40% {
+        transform: scale(0.88);
+    }
+    60% {
+        transform: scale(1.06);
+    }
+    80% {
+        transform: scale(0.969);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+@keyframes scale_bounce_expo {
+    0% {
+        transform: scale(0);
+    }
+    20% {
+        transform: scale(1.2);
+    }
+    40% {
+        transform: scale(0.88);
+    }
+    60% {
+        transform: scale(1.06);
+    }
+    80% {
+        transform: scale(0.969);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@-webkit-keyframes pulse {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.2;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes pulse {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.2;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes loadOut {
+    from {
+        -webkit-clip-path: inset(0 0 0 0);
+                clip-path: inset(0 0 0 0);
+    }
+    to {
+        -webkit-clip-path: inset(0 0 100% 0);
+                clip-path: inset(0 0 100% 0);
+    }
+}
+
+@keyframes loadOut {
+    from {
+        -webkit-clip-path: inset(0 0 0 0);
+                clip-path: inset(0 0 0 0);
+    }
+    to {
+        -webkit-clip-path: inset(0 0 100% 0);
+                clip-path: inset(0 0 100% 0);
+    }
+}
+
+@keyframes confettiRain {
+    0% {
+        opacity: 1;
+        margin-top: -100vh;
+        margin-left: -200px;
+    } 
+
+    100% {
+        opacity: 1;
+        margin-top: 100vh;
+        margin-left: 200px;
+    }
+}

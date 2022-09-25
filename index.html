@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Quiz Serasa</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- FontAwesome -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Aref+Ruqaa+Ink:wght@400;700&family=Inter:wght@400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/fontawesome/fontawesome.css" />
+    <!-- Box Icons -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"
+    />
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="assets/bootstrap/bootstrap.min.css" />
+    <!-- Toastr -->
+    <link rel="stylesheet" href="assets/toastr/toastr.min.css" />
+    <!-- Index CSS -->
+    <link rel="stylesheet" type="text/css" href="css/index.css" />
+    <!-- Components -->
+    <link rel="stylesheet" href="components/footer/footer.css" />
+    <!-- home CSS -->
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="css/index_v1.css" />
+  </head>
+
+  <body class="game">
+    <section class="tela-inicial">
+      <div class="image-bg">
+        <img src="assets/img/mars_sunburst.png" />
+      </div>
+
+      <div class="loader">
+        <div class="text">
+          <div id="nps-title">
+            <span>O</span>
+            <span>R</span>
+            <span>G</span>
+            <span>A</span>
+            <span>N</span>
+            <span>E</span>
+            <span>L</span>
+            <span>A</span>
+            <span>S</span>
+          </div>
+
+          <div class="s">
+            <span>C</span>
+            <span>I</span>
+            <span>T</span>
+            <span>O</span>
+            <!-- <span>&nbsp</span> -->
+            <span>P</span>
+            <span>L</span>
+            <span>A</span>
+            <span>S</span>
+            <span>M</span>
+            <span>Á</span>
+            <span>T</span>
+            <span>I</span>
+            <span>C</span>
+            <span>A</span>
+            <span>S</span>
+          </div>
+        </div>
+
+        <p id="btn-iniciar-quiz" style="display: none">
+          <button style="cursor: pointer" id="iniciar-quiz">
+            Clique aqui para iniciar o quiz
+          </button>
+        </p>
+      </div>
+    </section>
+
+    <section class="game-area">
+      <div class="container">
+        <div class="row q-height-100">
+          <div
+            class="col-sm-12 col-md-6 align-self-center d-flex justify-content-center portrait"
+          >
+            <div class="tel-circle">
+              <img src="assets/img/quiz_logo.png" />
+            </div>
+          </div>
+
+          <div
+            class="col-sm-12 col-md-3 align-self-center portrait"
+            id="area-perguntas"
+          >
+            <div class="pergunta-title">
+              <h1 id="question__text" style="width: 100%"></h1>
+              <p>Selecione a resposta certa</p>
+            </div>
+          </div>
+
+          <div class="col-sm-12 col-md-3 align-self-center portrait">
+            <!-- Respostas -->
+            <div class="respostas"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="perguntas-breadcrumbs">
+      <div class="pergunta-breadcrumb"></div>
+      <div class="pergunta-breadcrumb"></div>
+      <div class="pergunta-breadcrumb"></div>
+      <div class="pergunta-breadcrumb"></div>
+      <div class="pergunta-breadcrumb"></div>
+      <div class="pergunta-breadcrumb"></div>
+      <div class="pergunta-breadcrumb"></div>
+      <div class="pergunta-breadcrumb"></div>
+      <div class="pergunta-breadcrumb"></div>
+      <div class="pergunta-breadcrumb"></div>
+      <div class="pergunta-breadcrumb"></div>
+      <div class="pergunta-breadcrumb"></div>
+      <div class="pergunta-breadcrumb"></div>
+      <div class="pergunta-breadcrumb"></div>
+      <div class="pergunta-breadcrumb"></div>
+    </section>
+
+    <canvas class="grain"></canvas>
+
+    <div id="confetti-wrapper"></div>
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="modal-final-quiz"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="modal-final-quizTitle"
+      aria-hidden="true"
+      data-backdrop="static"
+      data-keyboard="false"
+    >
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-body">
+            <div id="modal-quiz-finalizado-content">
+              <img src="assets/img/final_quiz.svg" class="img-quiz" />
+              <h2>QUIZ COMPLETO</h2>
+              <p></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal Baixar Excel -->
+    <div
+      class="modal fade"
+      id="baixar-excel"
+      tabindex="-1"
+      role="dialog"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title font-weight-bold q-color-wine">
+              Gerar relatório
+            </h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div>
+              <div class="form-group">
+                <label for="data_inicial">Data inicial</label>
+                <input
+                  type="date"
+                  name="data_inicial"
+                  id="data_inicial"
+                  class="form-control"
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="data_final">Data final</label>
+                <input
+                  type="date"
+                  name="data_final"
+                  id="data_final"
+                  class="form-control"
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="grupo">Grupo</label>
+                <select id="grupo" class="form-control">
+                  <option value="GERAL">GERAL</option>
+                  <option value="EID">EID</option>
+                  <option value="PME">PME</option>
+                </select>
+              </div>
+
+              <div class="d-flex justify-content-end">
+                <button class="btn q-btn-wine" onclick="gerarRelatorio(this)">
+                  <span class="mr-1">Baixar</span>
+                  <i class="fa fa-download"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="assets/bootstrap/jquery-3.5.1.slim.min.js"></script>
+    <!-- Popper -->
+    <script src="assets/bootstrap/popper.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="assets/bootstrap/bootstrap.min.js"></script>
+    <!-- Font Awesome -->
+    <script src="assets/fontawesome/fontawesome.js"></script>
+    <!-- SweetAlert -->
+    <script src="assets/sweetalert/sweetalert2.js"></script>
+    <!-- Toastr / alerts -->
+    <script src="assets/toastr/toastr.min.js"></script>
+    <!-- Components -->
+    <script src="components/footer/footer.js"></script>
+    <!-- home JS -->
+    <script src="./main.js"></script>
+  </body>
+</html>

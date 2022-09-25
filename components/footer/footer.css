@@ -1,0 +1,16 @@
+.footer{
+    background: var(--primary);
+    color: var(--white);
+    padding: 16px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer h6{
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 14px;
+    text-align: center;
+}

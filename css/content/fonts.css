@@ -1,0 +1,45 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css?family=Roboto+Condensed");
+@font-face {
+  font-family: "Retrocycles";
+  src: url("../../assets/fonts/Retrocycles/RetrocyclesRegular.woff2") format("woff2"), url("../../assets/fonts/Retrocycles/RetrocyclesRegular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+    font-family: 'Hind Madurai';
+    src: url("../../assets/fonts/HindMadurai/HindMadurai-Light.ttf");
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: 'Hind Madurai';
+    src: url("../../assets/fonts/HindMadurai/HindMadurai-Medium.ttf");
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: 'Hind Madurai';
+    src: url("../../assets/fonts/HindMadurai/HindMadurai-Bold.ttf");
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: "Pasta";
+    src: url("../../assets/fonts/Pasta/PastaPalazzo.woff2") format("woff2"), url("../../assets/fonts/Pasta/PastaPalazzo.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Bungee';
+    src: url("../../assets/fonts/Bungee/Bungee-Regular.ttf");
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: 'Bungee';
+    src: url("../../assets/fonts/Bungee/Bungee-Regular.ttf");
+    font-weight: 400;
+}

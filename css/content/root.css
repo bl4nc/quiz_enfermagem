@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --primary: #CF3A39;
+    --white: #FFF;
+    --white-gray: #FAFAFA;
+    --gray: #ebe9e9;
+    --gray-dark: #dddddd;
+    --black: #000;
+    --red: #e30017;
+    --green: #08b89d;
+    --yellow: #FFC107;
+    --orange: orange;
+    --pink: #ffb6a9;
+    --wine: #432238;
+
+    --title: "Bungee";
+    --subtitle: "Hind Madurai";
+}

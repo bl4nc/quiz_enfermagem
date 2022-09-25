@@ -1,0 +1,206 @@
+@media (orientation: portrait) {
+    .image-bg {
+        width: 100%;
+    }
+
+    .image-bg img {
+        width: 100%;
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: auto;
+        top: 50%;
+        transform: translateY(-50%) rotate(0deg);
+    }
+
+    .pergunta-title {
+        width: 100%;
+        text-align: center;
+    }
+
+    .pergunta-title h1 {
+        font-size: 18px;
+    }
+
+    .pergunta-title p,
+    .pergunta-title h1,
+    .pergunta-title a,
+    .pergunta-title div {
+        float: none !important;
+        border: 0 !important;
+        margin: 0 auto !important;
+        text-align: center !important;
+        margin-top: 6px !important;
+    }
+
+    .respostas .resposta{
+        width: 86%;
+    }
+
+    .tel-circle{
+        width: 300px;
+        height: 300px;
+        margin-top: 12px;
+    }
+
+    .perguntas-breadcrumbs .pergunta-breadcrumb {
+        float: none;
+        margin: 14px 0;
+    }
+
+    .perguntas-breadcrumbs{
+        position: fixed !important;
+        top: 50% !important;
+        left: 0 !important;
+        width: 100% !important;
+        transform: translateY(-50%);
+        margin-left: 8px !important;
+        bottom: unset !important;
+    }
+
+    .portrait{
+        -webkit-box-flex: 0 !important;
+        -ms-flex: 0 0 100% !important;
+        flex: 0 0 100% !important;
+        max-width: 100% !important;
+    }
+
+    .respostas{
+        position: relative;
+        z-index: 600;
+    }
+}
+
+@media (min-width: 968px) {
+    .image-bg img {
+        width: 100%;
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: auto;
+        top: 50%;
+        transform: translateY(-50%) rotate(0deg);
+    }
+
+    .pergunta-title {
+        width: 100%;
+        text-align: center;
+    }
+
+    .pergunta-title h1 {
+        font-size: 20px;
+    }
+
+    .pergunta-title p,
+    .pergunta-title h1,
+    .pergunta-title a,
+    .pergunta-title div {
+        float: none !important;
+        border: 0 !important;
+        margin: 0 auto !important;
+        text-align: center !important;
+        margin-top: 6px !important;
+    }
+
+    .respostas .resposta{
+        width: 86%;
+    }
+
+    .tel-circle{
+        width: 200px;
+        height: 200px;
+        margin-top: 12px;
+    }
+
+    .perguntas-breadcrumbs .pergunta-breadcrumb {
+        float: none;
+        margin: 14px 0;
+    }
+
+    .perguntas-breadcrumbs{
+        position: fixed !important;
+        top: 19rem !important;
+        left: 0 !important;
+        /* width: 100% !important; */
+        margin-left: 8px !important;
+        bottom: unset !important;
+    }
+
+    .portrait{
+        -webkit-box-flex: 0 !important;
+        -ms-flex: 0 0 100% !important;
+        flex: 0 0 100% !important;
+        max-width: 100% !important;
+    }
+
+    .respostas{
+        position: relative;
+        z-index: 600;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .image-bg {
+        width: 100%;
+    }
+
+    .image-bg img {
+        width: 100%;
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: auto;
+        top: 50%;
+        transform: translateY(-50%) rotate(0deg);
+    }
+
+    .pergunta-title {
+        width: 100%;
+        text-align: center;
+    }
+
+    .pergunta-title h1 {
+        font-size: 18px;
+    }
+
+    .pergunta-title p,
+    .pergunta-title h1,
+    .pergunta-title a,
+    .pergunta-title div {
+        float: none !important;
+        border: 0 !important;
+        margin: 0 auto !important;
+        text-align: center !important;
+        margin-top: 6px !important;
+    }
+
+    .respostas .resposta{
+        width: 86%;
+    }
+
+    .tel-circle{
+        width: 200px;
+        height: 200px;
+        margin-top: 12px;
+    }
+
+    .perguntas-breadcrumbs .pergunta-breadcrumb {
+        float: none;
+        margin: 14px 0;
+    }
+
+    .perguntas-breadcrumbs{
+        width: 100% !important;
+        margin-left: 8px !important;
+        bottom: 156px !important
+    }
+
+    .respostas{
+        position: relative;
+        z-index: 600;
+    }
+
+    #btn-fixed{
+        z-index: 700;
+    }
+}

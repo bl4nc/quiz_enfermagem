@@ -1,0 +1,24 @@
+.q-height-100{
+    height: 100vh;
+}
+
+.q-btn-primary{
+    font-family: 'Bungee';
+    font-weight: 300;
+    background: var(--wine);
+    color: var(--white);
+}
+
+.q-bg-wine{
+    background: var(--wine);
+}
+
+.q-color-wine{
+    color: var(--wine);
+}
+
+.q-btn-wine{
+    background: var(--wine);
+    color: var(--white);
+    font-weight: 700;
+}
