@@ -169,22 +169,6 @@ const perguntas = [{
     possuiCampoDigitacao: false
 },
 {
-    nome: "Que organela é responsável pelo armazenamento de enzimas que catalisam o peróxido de hidrogênio, mais conhecido como água oxigenada (H2O2)?",
-    resposta: "Peroxissomo.",
-    backgroundColor: "",
-    options: [
-        "ATP.",
-        "Núcleo.",
-        "Citoplasma.",
-        "Peroxissomo."
-    ],
-    notificaoRespostaCerta: `
-        <strong>Alternativa 4 correta</strong>                
-        `,
-    temRespostaCorreta: true,
-    possuiCampoDigitacao: false
-},
-{
     nome: "Qual a principal função da Membrana plasmática?",
     resposta: "Delimitar o conteúdo intracelular e extracelular.",
     backgroundColor: "",
@@ -400,7 +384,7 @@ function carregaQuestao(n_questao) {
     let questionText = document.querySelector("#question__text");
     let respostasArea = document.querySelector(".respostas");
     let breadCrumbs = document.querySelectorAll(".perguntas-breadcrumbs .pergunta-breadcrumb");
-    if (progresso == 15) {
+    if (progresso == 14) {
         // Limpa área de respostas
         respostasArea.innerHTML = ``;
         // Limpa área de questões
