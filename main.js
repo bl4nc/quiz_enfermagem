@@ -478,7 +478,7 @@ function finalizarQuiz() {
 
     runConfettiRain('confetti-final');
 
-    let porc = Math.floor((100 / 13) * qtdCorretas)
+    let porc = Math.floor((100 / 12) * qtdCorretas)
 
     mensagemFinal.innerHTML = `
         Parabéns, você finalizou o quiz. <br>
